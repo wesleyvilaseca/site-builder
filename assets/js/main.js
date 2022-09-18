@@ -11,10 +11,31 @@ const editor = grapesjs.init({
         appendTo: "#blocks"
     },
     layerManager: {
-        appendTo: "#layer-container"
+        appendTo: "#layers-container"
     },
     stylesManager: {
-        appendTo: "#style-view"
+        appendTo: "#styles-container",
+        sectors: [
+            {
+                name: "Dimension",
+                open: false,
+                buildProps: ["width", "min-height", "padding"],
+                properties: [{
+                    type: "integer",
+                    name: "the width",
+                    property: "width",
+                    units: ["px", "%", "rem"],
+                    default: "auto",
+                    min: 0
+                }]
+            }
+        ]
+    },
+    traitManager: {
+        appendTo: "#trait-container"
+    },
+    selectorManager: {
+        appendTo: "#styles-container",
     },
     panels: {
         defaults: [

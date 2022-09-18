@@ -35,29 +35,41 @@
             </button>
 
             <ul class="list-group pages">
-                <li class="list-group-item d-flex justify-content-betwen">
+                <li class="list-group-item d-flex justify-content-betwen align-items-center">
                     home
 
                     <div class="m-2">
-                        <i class="bi bi-pencil-fill"></i>
-                        <i class="bi bi-trash"></i>
+                        <buttton class="btn btn-sm btn-outline-primary">
+                            <i class="bi bi-pencil-fill"></i>
+                        </buttton>
+                        <buttton class="btn btn-sm btn-outline-danger">
+                            <i class="bi bi-trash"></i>
+                        </buttton>
                     </div>
                 </li>
-                <li class="list-group-item d-flex justify-content-betwen">
+                <li class="list-group-item d-flex justify-content-betwen align-items-center">
                     about
 
                     <div class="m-2">
-                        <i class="bi bi-pencil-fill"></i>
-                        <i class="bi bi-trash"></i>
+                        <buttton class="btn btn-sm btn-outline-primary">
+                            <i class="bi bi-pencil-fill"></i>
+                        </buttton>
+                        <buttton class="btn btn-sm btn-outline-danger">
+                            <i class="bi bi-trash"></i>
+                        </buttton>
                     </div>
                 </li>
 
-                <li class="list-group-item d-flex justify-content-betwen">
+                <li class="list-group-item d-flex justify-content-betwen align-items-center">
                     contact
 
                     <div class="m-2">
-                        <i class="bi bi-pencil-fill"></i>
-                        <i class="bi bi-trash"></i>
+                        <buttton class="btn btn-sm btn-outline-primary">
+                            <i class="bi bi-pencil-fill"></i>
+                        </buttton>
+                        <buttton class="btn btn-sm btn-outline-danger">
+                            <i class="bi bi-trash"></i>
+                        </buttton>
                     </div>
                 </li>
             </ul>
@@ -72,8 +84,8 @@
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="trait-tab" data-bs-toggle="tab" data-bs-target="#trait"
-                        aria-selected="true" aria-controls="trait">
+                    <button class="nav-link" id="layer-tab" data-bs-toggle="tab" data-bs-target="#layer"
+                        aria-selected="true" aria-controls="layer">
                         <i class="bi bi-layers-fill"></i>
                     </button>
                 </li>
@@ -83,19 +95,26 @@
                         <i class="bi bi-palette-fill"></i>
                     </button>
                 </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="trait-tab" data-bs-toggle="tab" data-bs-target="#trait"
+                        aria-selected="true" aria-controls="trait">
+                        <i class="bi bi-gear-fill"></i>
+                    </button>
+                </li>
             </ul>
 
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="block" role="tabpanel" aria-labelledby="block-tab">
                     <div id="blocks"></div>
                 </div>
-
-                <div class="tab-pane fade" id="trait" role="tabpanel" aria-labelledby="block-tab">
-                    <div id="layer-container"></div>
+                <div class="tab-pane fade" id="layer" role="tabpanel" aria-labelledby="layer-tab">
+                    <div id="layers-container"></div>
                 </div>
-
-                <div class="tab-pane fade" id="style" role="tabpanel" aria-labelledby="block-tab">
-                    <div id="style-view"></div>
+                <div class="tab-pane fade" id="style" role="tabpanel" aria-labelledby="style-tab">
+                    <div id="styles-container"></div>
+                </div>
+                <div class="tab-pane fade" id="trait" role="tabpanel" aria-labelledby="trait-tab">
+                    <div id="trait-container"></div>
                 </div>
             </div>
         </div>

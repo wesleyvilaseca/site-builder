@@ -36,13 +36,17 @@ html {
 }
 
 .pages {
-    height: 100px;
+    height: 150px;
     overflow: scroll;
     overflow-x: hidden;
 }
 
 .nav {
-   justify-content: space-between; 
+    justify-content: space-between;
+}
+
+.list-group-item {
+    justify-content: space-between;
 }
 
 .main-content {
@@ -86,6 +90,11 @@ html {
     color: #fff;
 }
 
-.gjs-four-color, .gjs-four-color-h:hover {
+.gjs-four-color,
+.gjs-four-color-h:hover {
     color: #1e8fe1;
+}
+
+.gjs-pn-btn {
+    border: 1px solid #1e8fe1;
 }
