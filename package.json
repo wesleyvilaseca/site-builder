@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,20 @@
   "bugs": {
     "url": "https://github.com/wesleyvilaseca/site-builder/issues"
   },
-  "homepage": "https://github.com/wesleyvilaseca/site-builder#readme"
+  "homepage": "https://github.com/wesleyvilaseca/site-builder#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "hbs": "^4.2.0",
+    "mongoose": "^6.6.1"
+  }
 }
